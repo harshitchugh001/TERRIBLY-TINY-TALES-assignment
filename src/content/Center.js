@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Item from './Item';
 
 export default function Center() {
-  const [data, setData] = useState(null);
+  // const [data, setData] = useState(null);
   const [questionArray, setQuestionArray] = useState([]);
   const [answerArray, setAnswerArray] = useState([]);
 
@@ -11,7 +11,7 @@ export default function Center() {
       try {
         const response = await fetch('https://www.terriblytinytales.com/test.txt');
         const text = await response.text();
-        setData(text);
+        // setData(text);
         datasort(text);
       } catch (error) {
         console.log('Error fetching data:', error);
